@@ -5,8 +5,8 @@ const Counter = ({ name }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log("Counter created!");
-    return () => console.log("Counter Destroyed!");
+    console.log("Counter created!" ,name);
+    return () => console.log("Counter Destroyed!",name);
   }, []);
 
   const increment = () => setCount((prev) => prev + 1);
